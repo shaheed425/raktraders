@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rak-black: #10120F;
+  --color-rak-forest: #10251B;
+  --color-rak-charcoal: #292A27;
+  --color-rak-ivory: #F5F0E6;
+  --color-rak-ivory-light: #FAF7F2;
+  --color-rak-muted: #D6D2C9;
+  --color-rak-gold: #C8A15A;
+  --color-rak-gold-light: #DFC287;
+  --color-rak-gold-dark: #9C7733;
+
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Cinzel', 'Cormorant Garamond', serif;
+  --font-script: 'Alex Brush', cursive;
+}
+
+:root {
+  --rak-black: #10120F;
+  --rak-forest: #10251B;
+  --rak-charcoal: #292A27;
+  --rak-ivory: #F5F0E6;
+  --rak-ivory-light: #FAF7F2;
+  --rak-muted: #D6D2C9;
+  --rak-gold: #C8A15A;
+  --rak-gold-light: #DFC287;
+  --rak-gold-dark: #9C7733;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #10120F;
+  color: #F5F0E6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #10120F;
+  color: #F5F0E6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Serif typography styling matching reference editorial aesthetic */
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-crest {
+  font-family: 'Cinzel', serif;
+}
+
+/* Custom Gold Button */
+.btn-gold {
+  background-color: #C8A15A;
+  color: #10120F;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+  border: 1px solid rgba(200, 161, 90, 0.4);
+  cursor: pointer;
+}
+
+.btn-gold:hover {
+  background-color: #DFC287;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(200, 161, 90, 0.25);
+}
+
+.btn-outline-gold {
+  background-color: transparent;
+  color: #C8A15A;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+  border: 1px solid #C8A15A;
+  cursor: pointer;
+}
+
+.btn-outline-gold:hover {
+  background-color: rgba(200, 161, 90, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Subtle gold borders */
+.border-gold-subtle {
+  border-color: rgba(200, 161, 90, 0.25);
+}
+
+.border-gold-medium {
+  border-color: rgba(200, 161, 90, 0.45);
+}
+
+/* Botanical texture overlays */
+.bg-botanical-dark {
+  background-color: #10120F;
+  background-image: radial-gradient(circle at 20% 30%, rgba(16, 37, 27, 0.45) 0%, transparent 60%),
+                    radial-gradient(circle at 80% 80%, rgba(200, 161, 90, 0.04) 0%, transparent 50%);
+}
+
+.bg-forest-subtle {
+  background-color: #10251B;
+  background-image: radial-gradient(circle at 50% 20%, rgba(20, 48, 35, 0.7) 0%, transparent 70%),
+                    radial-gradient(circle at 90% 90%, rgba(200, 161, 90, 0.05) 0%, transparent 60%);
+}
+
+.bg-ivory-texture {
+  background-color: #F5F0E6;
+  background-image: radial-gradient(circle at 10% 20%, rgba(214, 210, 201, 0.25) 0%, transparent 50%),
+                    radial-gradient(circle at 90% 80%, rgba(200, 161, 90, 0.06) 0%, transparent 40%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #10120F;
+}
+::-webkit-scrollbar-thumb {
+  background: #292A27;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A15A;
+}
